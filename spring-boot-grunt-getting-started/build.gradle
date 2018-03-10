@@ -3,12 +3,7 @@ buildscript {
 		springBootVersion = '2.0.0.RELEASE'
 	}
 	repositories {
-		maven {
-			url("http://maven.zuminternet.com/artifactory/libs-release")
-		}
-		maven {
-			url("http://repo.spring.io/milestone")
-		}
+		mavenCentral()
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
